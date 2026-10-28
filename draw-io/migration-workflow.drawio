@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Seite-1" id="7rqFXPEgKvxRBGHNw-IW">
-    <mxGraphModel dx="2011" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1742" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -68,7 +68,7 @@
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-22" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Agent Metrics&lt;/b&gt;&lt;div&gt;(Langfuse)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="152" x="628" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="DilvRT2NRxJWSvRKH2Zs-24" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=21;align=left;" value="&lt;h2 style=&quot;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Assumptions:&amp;nbsp;&lt;/b&gt;&lt;/h2&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Legacy project:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;compiles successfully&lt;/li&gt;&lt;li&gt;test are all green&lt;/li&gt;&lt;li&gt;X% test coverage&amp;nbsp;&lt;/li&gt;&lt;li&gt;has documented static code analysis (code smells)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Agent Setup uses open weight model with the following requirements:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Model are runnable on a relatively simple onPrem setup&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;files in /test folder are only readable for the AI agent&lt;/li&gt;&lt;li&gt;AI agents have a predefined prompt&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-24" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=21;align=left;" value="&lt;h2 style=&quot;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Assumptions:&amp;nbsp;&lt;/b&gt;&lt;/h2&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Legacy project:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;compiles successfully&lt;/li&gt;&lt;li&gt;test are all green&lt;/li&gt;&lt;li&gt;X% test coverage&amp;nbsp;&lt;/li&gt;&lt;li&gt;has documented static code analysis (code smells)&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Agent Setup uses open weight model with the following requirements:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Model are runnable on a relatively simple onPrem setup&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;files in /test folder are only readable for the AI agent&lt;/li&gt;&lt;li&gt;AI agents have a predefined prompt&amp;nbsp;&lt;/li&gt;&lt;li&gt;AI agents get a filtered error log&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="260" width="340" x="800" y="30" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-30" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="DilvRT2NRxJWSvRKH2Zs-41" value="">
@@ -129,11 +129,20 @@
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Workflow Metrics&lt;/b&gt;&lt;div&gt;(?)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="152" x="50" y="240" as="geometry" />
         </mxCell>
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-54" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="DilvRT2NRxJWSvRKH2Zs-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-56" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="DilvRT2NRxJWSvRKH2Zs-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-50" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="&lt;b&gt;Migrated Java 21 Maven project&lt;/b&gt;&lt;div&gt;(Docker Container)&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="150" x="202" y="780" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-52" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;b&gt;Static Code Analysis&lt;/b&gt;&lt;div&gt;(SonarQube)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="156" x="202" y="910" as="geometry" />
+          <mxGeometry height="60" width="156" x="352" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-55" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;Java 21 Version Verification&lt;/b&gt;&lt;/div&gt;&lt;div&gt;(?)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="156" x="159" y="920" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
