@@ -1,0 +1,21 @@
+services:
+  java8-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: java8-test-runner:latest
+    working_dir: /workspace
+    volumes:
+      # Mount target Maven project into /workspace
+      - ${PROJECT_DIR:-.}:/workspace:cached
+      # Mount verification scripts
+      - ./scripts:/scripts:ro
+      # Cache downloaded Maven dependencies
+      - m2-cache:/root/.m2
+    environment:
+      # Enforce UTF-8 encoding in Java 8 to prevent compiler errors with umlauts/special characters
+      - MAVEN_OPTS=-Dfile.encoding=UTF-8
+
+volumes:
+  m2-cache:
+    name: java8_m2_cache
