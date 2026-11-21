@@ -9,11 +9,13 @@
 ## Pipeline Usage
 
 ```bash
-# Run baseline checks on a specific legacy project
-./run-java8.sh /path/to/legacy-java8-project
+# Run baseline checks on test dataset (clones test repo in container & runs tests)
+./run-java8.sh
+# or explicitly:
+./run-java8.sh dataset/test.csv
 
-# Run baseline checks on the built-in smoke-test project
-./run-java8.sh ./smoke-test
+# Run baseline checks on full dataset (processes all repos in dataset.csv)
+./run-java8.sh dataset/dataset.csv
 
 # Build the container image before pipeline execution
 ./run-java8.sh build
@@ -31,3 +33,6 @@
 | `3` | **`CONFIG_ERROR`** | Missing directory or missing `pom.xml`. |
 
 ---
+
+## Dataset
+**Dataset source:**  [AmazonScience/migration-bench-java-selected](https://huggingface.co/datasets/AmazonScience/migration-bench-java-selected)

@@ -3,7 +3,8 @@ FROM maven:3.8.8-eclipse-temurin-8
 
 WORKDIR /workspace
 
+COPY dataset/ /dataset/
 COPY scripts/ /scripts/
 RUN chmod +x /scripts/*.sh
 
-CMD ["/scripts/verify-baseline.sh"]
+CMD ["/scripts/verify-dataset.sh", "/dataset/test.csv"]

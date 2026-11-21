@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # Java 8 Baseline Test Runner (Maven)
-# Loads a provided Java 8 Maven project into the container and verifies:
+# Clones repositories from a dataset CSV inside an isolated Docker container
+# and verifies baseline assumptions:
 #   1. Build check (mvn clean test-compile)
 #   2. Test check  (mvn test)
 # ==============================================================================
@@ -32,38 +33,31 @@ if [ "${1:-}" = "build" ]; then
     exit 0
 fi
 
-# 4. Resolve target project directory
-TARGET_PATH="${1:-}"
+# 4. Resolve CSV dataset target (default: dataset/test.csv)
+TARGET="${1:-dataset/test.csv}"
 
-if [ -z "$TARGET_PATH" ]; then
-    if [ -f "./smoke-test/pom.xml" ]; then
-        TARGET_PATH="./smoke-test"
-    else
-        TARGET_PATH="."
-    fi
-fi
-
-if [ ! -d "$TARGET_PATH" ]; then
-    echo "❌ Error: Target project directory does not exist: $TARGET_PATH" >&2
-    exit 3
-fi
-
-export PROJECT_DIR="$(cd "$TARGET_PATH" && pwd)"
-
-# Verify project has a pom.xml
-if [ ! -f "$PROJECT_DIR/pom.xml" ]; then
-    echo "❌ Error: No pom.xml found in $PROJECT_DIR" >&2
-    exit 3
-fi
-
-# Shift project argument if provided
-if [ $# -gt 0 ]; then
+if [ $# -gt 0 ]; then #
     shift
 fi
 
-# 5. Run baseline verification or custom command inside container
-if [ $# -eq 0 ]; then
-    docker compose run --rm -T java8-test /scripts/verify-baseline.sh
+if [[ "$TARGET" != *.csv ]]; then
+    echo "❌ Error: Expected a CSV dataset file (e.g. dataset/test.csv or dataset/dataset.csv), got: $TARGET" >&2
+    exit 3
+fi
+
+if [ ! -f "$TARGET" ]; then
+    echo "❌ Error: Dataset CSV file does not exist: $TARGET" >&2
+    exit 3
+fi
+
+CSV_PATH="$(cd "$(dirname "$TARGET")" && pwd)/$(basename "$TARGET")"
+DATASET_DIR="$(cd "$SCRIPT_DIR/dataset" && pwd)"
+
+# 5. Run baseline verification inside container
+if [[ "$CSV_PATH" == "$DATASET_DIR"* ]]; then # check if dataset is already mounted to container
+    CONTAINER_CSV="/dataset/$(basename "$TARGET")"
+    docker compose run --rm -T java8-test /scripts/verify-dataset.sh "$CONTAINER_CSV" "$@"
 else
-    docker compose run --rm -T java8-test "$@"
+    CONTAINER_CSV="/dataset/$(basename "$TARGET")"
+    docker compose run --rm -T -v "$CSV_PATH:$CONTAINER_CSV:ro" java8-test /scripts/verify-dataset.sh "$CONTAINER_CSV" "$@"
 fi

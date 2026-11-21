@@ -6,8 +6,8 @@ services:
     image: java8-test-runner:latest
     working_dir: /workspace
     volumes:
-      # Mount target Maven project into /workspace
-      - ${PROJECT_DIR:-.}:/workspace:cached
+      # Mount dataset directory
+      - ./dataset:/dataset:ro
       # Mount verification scripts
       - ./scripts:/scripts:ro
       # Cache downloaded Maven dependencies
