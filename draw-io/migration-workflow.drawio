@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Seite-1" id="7rqFXPEgKvxRBGHNw-IW">
-    <mxGraphModel dx="3383" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3540" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -139,7 +139,7 @@
             <mxPoint x="310" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DilvRT2NRxJWSvRKH2Zs-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Workflow Metrics&lt;/b&gt;&lt;div&gt;(?)&lt;/div&gt;" vertex="1">
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Workflow Metrics&lt;/b&gt;&lt;div&gt;(Write to a log file)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="152" x="50" y="240" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-50" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="&lt;b&gt;Migrated Java 21 Maven project&lt;/b&gt;&lt;div&gt;(Docker Container)&lt;/div&gt;" vertex="1">
