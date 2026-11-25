@@ -1,13 +1,13 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Seite-1" id="7rqFXPEgKvxRBGHNw-IW">
-    <mxGraphModel dx="3540" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3801" dy="2364" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
-          <mxGeometry height="1220" width="800" x="-20" y="30" as="geometry" />
+          <mxGeometry height="1090" width="800" x="-20" y="-200" as="geometry" />
         </mxCell>
-        <mxCell id="DilvRT2NRxJWSvRKH2Zs-5" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DilvRT2NRxJWSvRKH2Zs-4" value="">
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-5" edge="1" parent="1" source="Mm51JgphjmH6hUP8nd8U-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DilvRT2NRxJWSvRKH2Zs-4" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="400" y="160" as="sourcePoint" />
             <mxPoint x="400" y="110" as="targetPoint" />
@@ -48,8 +48,11 @@
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;b&gt;Rule-Based Modernization&lt;/b&gt;&lt;div&gt;(OpenRewrite)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="170" x="315" y="240" as="geometry" />
         </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-9" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Mm51JgphjmH6hUP8nd8U-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-6" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="&lt;b&gt;Legacy Java 8 Maven project&lt;/b&gt;&lt;div&gt;(Docker Container)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="150" x="325" y="80" as="geometry" />
+          <mxGeometry height="80" width="150" x="325" y="-10" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-23" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" target="DilvRT2NRxJWSvRKH2Zs-22" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -63,7 +66,7 @@
           <mxGeometry height="60" width="156" x="414" y="410" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Hybrid Migration Pipeline&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="170" x="-20" y="30" as="geometry" />
+          <mxGeometry height="30" width="170" x="-20" y="-200" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-22" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Agent Metrics&lt;/b&gt;&lt;div&gt;&lt;div&gt;(Langfuse)&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="152" x="628" y="470" as="geometry" />
@@ -139,17 +142,37 @@
             <mxPoint x="310" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DilvRT2NRxJWSvRKH2Zs-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Workflow Metrics&lt;/b&gt;&lt;div&gt;(Write to a log file)&lt;/div&gt;" vertex="1">
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-6" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;endArrow=none;endFill=0;" target="DilvRT2NRxJWSvRKH2Zs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DilvRT2NRxJWSvRKH2Zs-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Collect Workflow Metrics&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(Shell Script)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="152" x="50" y="240" as="geometry" />
         </mxCell>
         <mxCell id="DilvRT2NRxJWSvRKH2Zs-50" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="&lt;b&gt;Migrated Java 21 Maven project&lt;/b&gt;&lt;div&gt;(Docker Container)&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="178" x="186" y="780" as="geometry" />
         </mxCell>
         <mxCell id="Mm51JgphjmH6hUP8nd8U-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
-          <mxGeometry height="1220" width="800" x="-860" y="30" as="geometry" />
+          <mxGeometry height="1220" width="800" x="-860" y="-100" as="geometry" />
         </mxCell>
         <mxCell id="Mm51JgphjmH6hUP8nd8U-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Regelbasierte Pipeline - Open Rewrite&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="257" x="-827" y="50" as="geometry" />
+          <mxGeometry height="30" width="257" x="-860" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-5" edge="1" parent="1" source="Mm51JgphjmH6hUP8nd8U-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="DilvRT2NRxJWSvRKH2Zs-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-7" connectable="0" parent="Mm51JgphjmH6hUP8nd8U-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="[ clone repo base commit ]" vertex="1">
+          <mxGeometry relative="1" x="-0.0816" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-4" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;MigrationBench Dataset&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="126" x="337" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;div&gt;&lt;b&gt;Baseline Test&lt;/b&gt;&lt;/div&gt;&lt;div&gt;(Shell Script)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="315" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Mm51JgphjmH6hUP8nd8U-10" edge="1" parent="1" source="DilvRT2NRxJWSvRKH2Zs-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=-5;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;dashed=1;" target="DilvRT2NRxJWSvRKH2Zs-50">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
